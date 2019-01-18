@@ -48,7 +48,7 @@ pipeline {
       }
       steps {
         dir('./charts/node-http') {
-          sh "jx step changelog --version v\$(cat ../../VERSION)"
+          //sh "jx step changelog --version v\$(cat ../../VERSION)"
 
           // release the helm chart
           sh "jx step helm release"
